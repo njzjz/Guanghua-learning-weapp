@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/index/index",
+    "pages/lesson/lesson",
+    "pages/sign/sign"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "光华书院",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "课程",
+        "iconPath": "images/guangchang2.png",
+        "selectedIconPath": "images/guangchang.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/geren2.png",
+        "selectedIconPath": "images/geren.png"
+      }
+    ],
+    "backgroundColor": "#ADD8E6",
+    "color": "#FFFAF0",
+    "selectedColor": "#8B2323"
+  }
+}

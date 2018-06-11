@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<!--pages/my/my.wxml-->
+<view class="title navigator user" style="margin-top: 23px;height:92px;line-height:30px;display:flex;flex-direction:row;align-items:center;">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </block>
+    </view>
+        <view class="groupinfo">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+<navigator url="../sign/sign" class="navigator user" style="margin-top: 23px;"><image style="width: 20px; height: 20px;margin-top: 10px;margin-left: 5px;margin-right: 5px;" src="	http://finding-1251553053.cossh.myqcloud.com/security/ZHDL.png"></image>验证邮箱</navigator>

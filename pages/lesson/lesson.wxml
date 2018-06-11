@@ -1,0 +1,13 @@
+<!--pages/lesson/lesson.wxml-->
+<view class="center" class="flex-wrap input-wrap" wx:if="{{lesson.video}}">
+  <video src="{{lesson.video}}" controls bindended="videoEnd" style="width:750rpx;height:562.5rpx;" autoplay="{{true}}"></video>
+</view>
+<view wx:if="{{lesson.information}}" class="flex-wrap input-wrap" style="flex-direction:column">
+  <view class="flex-wrap name">
+    <image src="http://finding-1251553053.cossh.myqcloud.com/activity/information.png" style="width:35px;height:35px;"></image>
+    <text class="label">课程详情</text>
+  </view>
+  <view class="flex-wrap todo">
+    <text class="todo-text tappable">{{lesson.information}}</text>
+  </view>
+</view>
